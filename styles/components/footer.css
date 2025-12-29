@@ -1,0 +1,122 @@
+.site-footer {
+    background: #0a0a0a;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 5rem 1.5rem 2rem;
+    color: #e5e5e5;
+    font-family: inherit;
+    position: relative;
+    overflow: hidden;
+}
+
+.site-footer__bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(circle at 80% 0%, rgba(249, 115, 22, 0.08), transparent 40%);
+}
+
+.site-footer__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 4rem;
+    position: relative;
+    z-index: 1;
+}
+
+.site-footer__brand h3 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 1.2rem;
+    letter-spacing: -0.02em;
+}
+
+.site-footer__brand p {
+    color: #888;
+    line-height: 1.7;
+    max-width: 320px;
+    font-size: 1.05rem;
+}
+
+.site-footer__links, .site-footer__socials {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.site-footer__links h4, .site-footer__socials h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.site-footer__links a {
+    color: #999;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    width: fit-content;
+    font-size: 1rem;
+}
+
+.site-footer__links a:hover {
+    color: #f97316;
+    transform: translateX(4px);
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.03);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.social-icons a:hover {
+    background: rgba(249, 115, 22, 0.1);
+    color: #f97316;
+    border-color: rgba(249, 115, 22, 0.4);
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(249, 115, 22, 0.2);
+}
+
+.site-footer__bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #555;
+    font-size: 0.9rem;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .site-footer__content {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+    
+    .site-footer__bottom {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}

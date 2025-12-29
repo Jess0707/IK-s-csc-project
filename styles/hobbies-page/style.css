@@ -1,0 +1,133 @@
+.hobbies-header {
+    position: relative;
+    padding: 8rem 1.5rem 4rem;
+    text-align: center;
+    background: radial-gradient(circle at 50% 0%, rgba(249, 115, 22, 0.1), transparent 70%);
+}
+
+@media (max-width: 640px) {
+    .hobbies-header {
+        padding: 6rem 1rem 3rem;
+    }
+}
+
+.hobbies-header__content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #f97316;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+}
+
+.back-link:hover {
+    transform: translateX(-5px);
+}
+
+.hobbies-header__title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+.hobbies-header__subtitle {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 60ch;
+    margin: 0 auto;
+}
+
+.hobbies-main {
+    padding: 2rem 1.5rem 8rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    grid-auto-flow: dense;
+}
+
+.hobby-tile {
+    position: relative;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    background: #1a1a1a;
+    aspect-ratio: 1;
+    cursor: pointer;
+}
+
+.hobby-tile--large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.hobby-tile--wide {
+    grid-column: span 2;
+    aspect-ratio: 2/1;
+}
+
+.hobby-tile__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    filter: brightness(0.8);
+}
+
+.hobby-tile:hover .hobby-tile__img {
+    transform: scale(1.05);
+    filter: brightness(0.6);
+}
+
+.hobby-tile__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.hobby-tile:hover .hobby-tile__content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.hobby-tile__content h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.hobby-tile__content p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .hobby-tile--large, .hobby-tile--wide {
+        grid-column: span 1;
+        grid-row: span 1;
+        aspect-ratio: 1;
+    }
+}

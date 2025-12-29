@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../styles/general/style.css">
+    <link rel="stylesheet" href="../styles/hobbies-page/style.css">
+    <link rel="stylesheet" href="../styles/components/loader.css">
+    <link rel="stylesheet" href="../styles/components/navbar.css">
+    <link rel="stylesheet" href="../styles/components/footer.css">
+    <title>Hobbies | Ikechukwu Udensi</title>
+</head>
+<body class="bg-[#0a0a0a]">
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader__content">
+            <div class="loader__spinner"></div>
+            <p class="loader__text">Loading Passions...</p>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="../index.html" class="nav-logo">IK<span>.</span></a>
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="hobbies.html" class="nav-link active">Hobbies</a>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="hobbies-header">
+        <div class="hobbies-header__bg" aria-hidden="true"></div>
+        <div class="hobbies-header__content">
+            <a href="../index.html" class="back-link">
+                <i class="fa-solid fa-arrow-left"></i> Back to Home
+            </a>
+            <h1 class="hobbies-header__title">Life Beyond Code</h1>
+            <p class="hobbies-header__subtitle">Explorations, pastimes, and the little things that spark joy and creativity in my daily life.</p>
+        </div>
+    </header>
+
+    
+    <main class="hobbies-main">
+        <div class="hobbies-grid">
+            <div class="hobby-tile hobby-tile--large">
+                <img src="../public/images/hobbies/music.jpg" alt="Music" class="hobby-tile__img">
+                <div class="hobby-tile__content">
+                    <h3>Music</h3>
+                    <p>My constant companion for focus and relaxation.</p>
+                </div>
+            </div>
+            <div class="hobby-tile">
+                <img src="../public/images/hobbies/gaming.png" alt="Gaming" class="hobby-tile__img">
+                <div class="hobby-tile__content">
+                    <h3>Gaming</h3>
+                    <p>Strategic thinking & fun.</p>
+                </div>
+            </div>
+            <div class="hobby-tile">
+                <img src="../public/images/hobbies/football.jpg" alt="Football" class="hobby-tile__img">
+                <div class="hobby-tile__content">
+                    <h3>Football</h3>
+                    <p>Teamwork & adrenaline.</p>
+                </div>
+            </div>
+            <div class="hobby-tile hobby-tile--wide">
+                <img src="../public/images/hobbies/movies.jpg" alt="Movies" class="hobby-tile__img">
+                <div class="hobby-tile__content">
+                    <h3>Movies</h3>
+                    <p>Storytelling visual inspiration.</p>
+                </div>
+            </div>
+            <div class="hobby-tile">
+                <img src="../public/images/hobbies/skating.jpeg" alt="Skating" class="hobby-tile__img">
+                <div class="hobby-tile__content">
+                    <h3>Skating</h3>
+                    <p>Balance & freedom.</p>
+                </div>
+            </div>
+            <div class="hobby-tile">
+                <img src="../public/images/hobbies/biking.jpg" alt="Biking" class="hobby-tile__img">
+                <div class="hobby-tile__content">
+                    <h3>Biking</h3>
+                    <p>Exploration on wheels.</p>
+                </div>
+            </div>
+             <div class="hobby-tile hobby-tile--large">
+                <img src="../public/images/hobbies/friends.jpg" alt="Friends" class="hobby-tile__img">
+                <div class="hobby-tile__content">
+                    <h3>Friends</h3>
+                    <p>The best support system.</p>
+                </div>
+            </div>
+             <div class="hobby-tile">
+                <img src="../public/images/hobbies/coding.jpg" alt="Coding" class="hobby-tile__img">
+                <div class="hobby-tile__content">
+                    <h3>Coding</h3>
+                    <p>Yes, it's a hobby too!</p>
+                </div>
+            </div>
+             <div class="hobby-tile">
+                <img src="../public/images/hobbies/sleep.jpg" alt="Sleep" class="hobby-tile__img">
+                <div class="hobby-tile__content">
+                    <h3>Sleep</h3>
+                    <p>Recharging the mind.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="site-footer__bg"></div>
+        <div class="site-footer__content">
+            <div class="site-footer__brand">
+                <h3>IK's Portfolio</h3>
+                <p>Crafting meaningful digital experiences with code, creativity, and a touch of passion.</p>
+            </div>
+            <div class="site-footer__links">
+                <h4>Explore</h4>
+                <a href="../index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="hobbies.html">Hobbies</a>
+            </div>
+            <div class="site-footer__socials">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="mailto:hello@ikechukwu.dev" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="site-footer__bottom">
+            <p>&copy; 2025 Ikechukwu Udensi. All rights reserved.</p>
+            <p>Designed & Built with <i class="fa-solid fa-heart text-orange-500"></i></p>
+        </div>
+    </footer>
+
+    <script src="../scripts/loader.js"></script>
+</body>
+</html>

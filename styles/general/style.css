@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+:root {
+  --font-heading: 'Audiowide', cursive;
+}
+body{
+    background-color: black;
+    font-family: 'Exo 2', sans-serif;
+    color: #e3e3e3;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #8b8b8b #141414;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #141414;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8b8b8b;
+  border-radius: 999px;
+  border: 2px solid #141414;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a6a6a6;
+}
